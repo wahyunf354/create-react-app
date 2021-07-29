@@ -6,6 +6,7 @@ const Contact = () => {
 
   const onSubmit = (data) => {
     console.log(data);
+    alert("Terima kasih telah menghubungi kami");
   };
 
   return (
