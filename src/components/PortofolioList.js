@@ -76,7 +76,6 @@ const PortofolioList = () => {
       <div
         className="portfolio-modal modal fade"
         id="portfolioModal1"
-        tabindex="-1"
         role="dialog"
         aria-labelledby="portfolioModal1Label"
         aria-hidden="true"
@@ -122,7 +121,7 @@ const PortofolioList = () => {
                       vitae? Reprehenderit soluta, eos quod consequuntur itaque.
                       Nam.
                     </p>
-                    <a href="#" className="btn btn-primary">
+                    <a href="/" className="btn btn-primary">
                       Read more
                       <i className="fas fa-arrow-alt-circle-right fa-fw"></i>
                     </a>
@@ -136,7 +135,6 @@ const PortofolioList = () => {
       <div
         className="portfolio-modal modal fade"
         id="portfolioModal2"
-        tabindex="-1"
         role="dialog"
         aria-labelledby="portfolioModal2Label"
         aria-hidden="true"
@@ -182,7 +180,7 @@ const PortofolioList = () => {
                       vitae? Reprehenderit soluta, eos quod consequuntur itaque.
                       Nam.
                     </p>
-                    <a href="#" className="btn btn-primary">
+                    <a href="/" className="btn btn-primary">
                       Read more
                       <i className="fas fa-arrow-alt-circle-right fa-fw"></i>
                     </a>
@@ -196,7 +194,6 @@ const PortofolioList = () => {
       <div
         className="portfolio-modal modal fade"
         id="portfolioModal3"
-        tabindex="-1"
         role="dialog"
         aria-labelledby="portfolioModal3Label"
         aria-hidden="true"
@@ -242,7 +239,7 @@ const PortofolioList = () => {
                       vitae? Reprehenderit soluta, eos quod consequuntur itaque.
                       Nam.
                     </p>
-                    <a href="#" className="btn btn-primary">
+                    <a href="/" className="btn btn-primary">
                       Read more
                       <i className="fas fa-arrow-alt-circle-right fa-fw"></i>
                     </a>
