@@ -1,6 +1,13 @@
 import React from "react";
+import { useForm } from "react-hook-form";
 
 const Contact = () => {
+  const { register, handleSubmit } = useForm();
+
+  const onSubmit = (data) => {
+    console.log(data);
+  };
+
   return (
     <section className="page-section" id="contact">
       <div className="container">
@@ -16,7 +23,11 @@ const Contact = () => {
         </div>
         <div className="row">
           <div className="col-lg-8 mx-auto">
-            <form id="contactForm" name="sentMessage">
+            <form
+              id="contactForm"
+              name="sentMessage"
+              onSubmit={handleSubmit(onSubmit)}
+            >
               <div className="control-group">
                 <div className="form-group floating-label-form-group controls mb-0 pb-2">
                   <label>Name</label>
@@ -26,6 +37,7 @@ const Contact = () => {
                     type="text"
                     placeholder="Name"
                     required="required"
+                    {...register("name")}
                   />
                   <p className="help-block text-danger"></p>
                 </div>
@@ -39,6 +51,7 @@ const Contact = () => {
                     type="email"
                     placeholder="Email Address"
                     required="required"
+                    {...register("email")}
                   />
                   <p className="help-block text-danger"></p>
                 </div>
@@ -52,6 +65,7 @@ const Contact = () => {
                     type="tel"
                     placeholder="Phone Number"
                     required="required"
+                    {...register("phone")}
                   />
                   <p className="help-block text-danger"></p>
                 </div>
@@ -66,6 +80,7 @@ const Contact = () => {
                     placeholder="Message"
                     required="required"
                     data-validation-required-message="Please enter a message."
+                    {...register("message")}
                   ></textarea>
                   <p className="help-block text-danger"></p>
                 </div>
